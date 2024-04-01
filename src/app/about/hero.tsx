@@ -4,8 +4,7 @@ const AboutHero: React.FC<AboutHeroProps> = () => {
   return (
     <>
       <svg
-        width='370'
-        height='235'
+        className='w-full'
         viewBox='0 0 370 235'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

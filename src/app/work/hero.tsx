@@ -4,8 +4,7 @@ const WorkHero: React.FC<WorkHeroProps> = () => {
   return (
     <>
       <svg
-        width='328'
-        height='210'
+        className='w-full'
         viewBox='0 0 328 210'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

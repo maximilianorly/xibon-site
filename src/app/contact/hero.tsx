@@ -4,8 +4,7 @@ const ContactHero: React.FC<ContactHeroProps> = () => {
   return (
     <>
       <svg
-        width='492'
-        height='172'
+        className='w-full'
         viewBox='0 0 492 172'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

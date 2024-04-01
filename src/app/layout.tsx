@@ -23,10 +23,14 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.className} w-screen h-screen`}>
         <Background>
-          <div className='flex flex-row p-7'>
-            <div className='md:w-1/2 flex flex-col justify-center space-y-20'>
-              <Hero />
-              <NavigationTabs />
+          <div className='flex flex-col md:flex-row p-7'>
+            <div className='md:w-1/2 h-screen flex flex-col'>
+              <div className='h-1/2 flex flex-col justify-center'>
+                <Hero />
+              </div>
+              <div className='h-1/2 flex flex-col justify-center'>
+                <NavigationTabs />
+              </div>
             </div>
             <main className='flex min-h-screen flex-col items-center justify-between p-24'>
               {children}

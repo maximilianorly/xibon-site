@@ -10,7 +10,7 @@ type HeroProps = {};
 const Hero: React.FC<HeroProps> = ({}) => {
   const pathname = usePathname();
   return (
-    <div className='hero__container pl-2'>
+    <div className='hero__container pl-2 w-80'>
       {pathname === routes.get('about')!.path && <AboutHero />}
       {pathname === routes.get('work')!.path && <WorkHero />}
       {pathname === routes.get('contact')!.path && <ContactHero />}

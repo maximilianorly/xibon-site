@@ -31,7 +31,8 @@ export const theme = {
       '4xl': '2rem',
     },
     animation: {
-      activeTabSlide: 'activeTabSlide 0.2s ease-in-out forwards'
+      activeTabSlide: 'activeTabSlide 0.2s ease-in-out forwards',
+      'spin-medium': 'spin 0.5s linear 2'
     },
     keyframes: {
       activeTabSlide: {

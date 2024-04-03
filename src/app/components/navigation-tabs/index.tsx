@@ -31,7 +31,6 @@ const NavigationTabs: React.FC<{}> = () => {
       <NavigationTab route={routes.get('about')!} />
       <NavigationTab route={routes.get('work')!} />
       <NavigationTab route={routes.get('contact')!} />
-      <NavigationTab route={routes.get('home')!} />
     </div>
   );
 };

@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Background from './components/Background';
-import NavigationTabs from './components/navigation-tabs';
+import NavigationTabs, { routes } from './components/navigation-tabs';
 import Hero from './components/hero';
+import Logo from './components/logo';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +27,9 @@ export default function RootLayout({
         <Background>
           <div className='flex flex-col md:flex-row p-7'>
             <div className='md:w-1/2 h-screen flex flex-col'>
+              <Link className='w-24 h-24' href={routes.get('home')!.path}>
+                <Logo />
+              </Link>
               <div className='h-1/2 flex flex-col justify-center'>
                 <Hero />
               </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Background from './components/Background';
+import Background from './components/background';
 import NavigationTabs, { routes } from './components/navigation-tabs';
 import Hero from './components/hero';
 import Logo from './components/logo';
@@ -25,8 +25,8 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.className} w-screen h-screen`}>
         <Background>
-          <div className='flex flex-col md:flex-row p-7'>
-            <div className='md:w-1/2 h-screen flex flex-col'>
+          <div className='flex flex-col md:flex-row justify-between p-7'>
+            <div className='md:w-1/2 flex flex-col'>
               <Link className='w-24 h-24' href={routes.get('home')!.path}>
                 <Logo />
               </Link>
@@ -37,7 +37,7 @@ export default function RootLayout({
                 <NavigationTabs />
               </div>
             </div>
-            <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+            <main className='flex flex-col items-center justify-between md:p-24'>
               {children}
             </main>
           </div>

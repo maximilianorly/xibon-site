@@ -24,15 +24,23 @@ export const theme = {
   },
   extend: {
     spacing: {
+      '115': '27.9375rem',
       '128': '32rem',
       '144': '36rem',
+      '150': '38.25rem',
+
     },
     borderRadius: {
-      '4xl': '2rem',
+      '4xl': '34px',
+      '5xl': '54px'
+    },
+    boxShadow: {
+      'backdrop': '0px 4px 4.5px 0px',
+      'passthrough': '0px 4px 15.3px 0px',
     },
     animation: {
       activeTabSlide: 'activeTabSlide 0.2s ease-in-out forwards',
-      'spin-medium': 'spin 0.5s linear 2'
+      'spin-medium': 'spin 0.5s linear 2',
     },
     keyframes: {
       activeTabSlide: {
@@ -44,7 +52,7 @@ export const theme = {
           borderBottom: '0.125rem solid',
           borderColor: 'bg-primary',
         }
-      }
+      },
     }
   }
 }

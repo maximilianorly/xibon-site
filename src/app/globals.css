@@ -30,4 +30,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  ::selection {
+    @apply bg-primary text-sys_light dark:text-sys_dark;
+  }
 }

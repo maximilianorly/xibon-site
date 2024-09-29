@@ -1,5 +1,13 @@
+import { headers } from 'next/headers';
+import { logPageVisit } from '../utils/logger';
+
 const Work: React.FC = () => {
-  return <>Work</>;
+  const headersList = headers();
+  const referer = headersList.get('referer');
+
+  logPageVisit('Work', referer);
+
+  return <>Work. Coming soon.</>;
 };
 
 export default Work;

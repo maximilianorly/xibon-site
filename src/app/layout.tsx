@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-import Background from './components/Background';
+import Background from './components/background';
 import NavigationTabs, { routes } from './components/navigation-tabs';
 import Hero from './components/hero';
 import Logo from './components/logo';
 import Link from 'next/link';
-
-const inter = Inter({ subsets: ['latin'] });
+import { sans_font } from './fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} w-screen h-screen`}>
+      <body className={`${sans_font.className} w-screen h-screen`}>
         <Background>
-          <div className='flex flex-col md:flex-row p-7'>
-            <div className='md:w-1/2 h-screen flex flex-col'>
+          <div className='flex flex-col md:flex-row h-full justify-between p-7'>
+            <div className='md:w-72 h-full flex flex-col'>
               <Link className='w-24 h-24' href={routes.get('home')!.path}>
                 <Logo />
               </Link>
@@ -37,7 +35,7 @@ export default function RootLayout({
                 <NavigationTabs />
               </div>
             </div>
-            <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+            <main className='flex flex-col grow items-center justify-center md:p-24'>
               {children}
             </main>
           </div>

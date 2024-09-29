@@ -1,6 +1,5 @@
 import { headers } from 'next/headers';
 import { logPageVisit } from '../utils/logger';
-import ColouredContentPanel from '../components/coloured-content-panel';
 
 const Contact: React.FC = () => {
   const headersList = headers();
@@ -8,11 +7,7 @@ const Contact: React.FC = () => {
 
   logPageVisit('Contact', referer);
 
-  return (
-    <>
-      <ColouredContentPanel colorClassName='bg-tertiary'></ColouredContentPanel>
-    </>
-  );
+  return <>Contact</>;
 };
 
 export default Contact;

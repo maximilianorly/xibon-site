@@ -23,8 +23,8 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${sans_font.className} w-screen h-screen`}>
         <Background>
-          <div className='flex flex-col md:flex-row justify-between p-7'>
-            <div className='md:w-1/2 flex flex-col'>
+          <div className='flex flex-col md:flex-row h-full justify-between p-7'>
+            <div className='md:w-72 h-full flex flex-col'>
               <Link className='w-24 h-24' href={routes.get('home')!.path}>
                 <Logo />
               </Link>

@@ -30,7 +30,7 @@ const NavigationTab: React.FC<{ route: Route }> = ({ route }) => {
                 : 'text-gray-800 font-light'
             } text-md mb-[-0.25rem]`}
           >
-            {route.label}
+            {route.label.toLocaleLowerCase()}
           </div>
         </div>
       </Link>

@@ -13,22 +13,20 @@ export const theme = {
     tertiary: '#A971BE',
     sys_dark: '#2F2F2D',
     sys_light: '#EEEEEE',
-    info: '#3c66b5',
+    info: '#3C66B5',
     success: '#5BA56A',
     warning: '#F5B12E',
     error: '#F23C52',
   },
-  fontFamily: {
-    sans: ['Graphik', 'sans-serif'],
-    serif: ['Merriweather', 'serif'],
-  },
   extend: {
+    letterSpacing: {
+      'tightest': '-0.065em'
+    },
     spacing: {
       '115': '27.9375rem',
       '128': '32rem',
       '144': '36rem',
       '150': '38.25rem',
-
     },
     borderRadius: {
       '4xl': '34px',
@@ -48,7 +46,7 @@ export const theme = {
           padding: '0'
         },
         '100%': {
-          padding: '0 5.3125rem',
+          padding: '0 2.5rem',
           borderBottom: '0.125rem solid',
           borderColor: 'bg-primary',
         }

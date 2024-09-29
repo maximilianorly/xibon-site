@@ -1,0 +1,108 @@
+.aboutHero__crosshairs {
+    transform: translate(9.375rem, 6.5625rem);
+}
+
+.aboutHero__crosshair1 {
+    animation: moveCrossLeft 1s ease-in-out forwards;
+    transform-origin: 0.6599rem 3.6681rem;
+}
+
+.aboutHero__crosshair2 {
+    animation: moveCrossRight 1s ease-in-out forwards;
+    transform-origin: 2.6662rem 3.6681rem;
+}
+
+.aboutHero__crosshair3 {
+    animation: moveCrossLeft 1s ease-in-out forwards;
+    transform-origin: 4.6706rem 3.6674rem;
+}
+
+.aboutHero__crosshair4 {
+    animation: moveCrossRight 1s ease-in-out forwards;
+    transform-origin: 6.6763rem 3.6681rem;
+}
+
+.aboutHero__waves {
+    animation: moveWaves 0.2s ease-in-out forwards;
+}
+
+.aboutHero__wave1 {
+    animation: moveWave1 0.5s ease forwards;
+}
+  
+.aboutHero__wave2 {
+    animation: moveWave2 0.5s ease forwards;
+}
+
+.aboutHero__semiCircle {
+    animation: moveSemiCircle 1s forwards;
+    z-index: 1;
+}
+
+
+@keyframes moveCrossLeft {
+    from {
+        transform: translate(4rem, 0) rotate(0deg);
+    }
+    to {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+@keyframes moveCrossRight {
+    from {
+        transform: translate(-4rem, 0) rotate(0deg);;
+    }
+    to {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+/* Waves */
+@keyframes moveWaves{
+    from {
+        transform: translate(9.375rem, -3.125rem);
+    }
+    to {
+        transform: translate(9.375rem, 9.375rem);
+    }
+}
+
+@keyframes moveWave1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 1rem);
+    }
+    40% {
+        transform: translate(0, 2rem);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+}
+  
+@keyframes moveWave2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    15% {
+        transform: translate(0, 1rem);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveSemiCircle {
+    0% {
+        transform: translate(-100px, 3.75rem) rotate(-180deg);
+    }
+    60% {
+        transform: translate(0.625rem, 3.75rem) rotate(30deg)
+    }
+    100% {
+        transform: translate(0.625rem, 3.75rem)
+    }
+}

@@ -1,7 +1,7 @@
 'use client';
 import { routes } from '../navigation-tabs';
 import { usePathname } from 'next/navigation';
-import AboutHero from '../../about/hero';
+import AboutHero from '../../about/hero/AboutHero';
 import WorkHero from '@/app/work/hero';
 import ContactHero from '@/app/contact/hero';
 

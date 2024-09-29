@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
 
   logPageVisit('Contact', referer);
 
-  return <>Contact</>;
+  return <>Contact. Coming soon.</>;
 };
 
 export default Contact;

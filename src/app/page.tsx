@@ -7,5 +7,9 @@ export default function Home() {
 
   logPageVisit('Home', referer);
 
-  return <>Home</>;
+  return (
+    <>
+      <h2 className='text-6xl tracking-widest'>Welcome.</h2>
+    </>
+  );
 }

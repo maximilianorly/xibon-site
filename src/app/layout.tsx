@@ -35,7 +35,7 @@ export default function RootLayout({
                 <NavigationTabs />
               </div>
             </div>
-            <main className='flex flex-col items-center justify-between md:p-24'>
+            <main className='flex flex-col grow items-center justify-center md:p-24'>
               {children}
             </main>
           </div>

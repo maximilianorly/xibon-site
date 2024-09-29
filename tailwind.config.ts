@@ -20,7 +20,8 @@ export const theme = {
   },
   extend: {
     letterSpacing: {
-      'tightest': '-0.065em'
+      'tightest': '-0.065em',
+      'widest': '0.5em'
     },
     spacing: {
       '115': '27.9375rem',

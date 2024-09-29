@@ -7,7 +7,7 @@ const Work: React.FC = () => {
 
   logPageVisit('Work', referer);
 
-  return <>Work</>;
+  return <>Work. Coming soon.</>;
 };
 
 export default Work;

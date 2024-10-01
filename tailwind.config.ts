@@ -40,6 +40,9 @@ export const theme = {
     animation: {
       activeTabSlide: 'activeTabSlide 0.2s ease-in-out forwards',
       'spin-medium': 'spin 0.5s linear 2',
+      'float-from-left': 'float-from-left 1.5s ease-out forwards',
+      'float-from-top': 'float-from-top 1.5s ease-out forwards',
+      'float-from-right': 'float-from-right 1.5s ease-out forwards',
     },
     keyframes: {
       activeTabSlide: {
@@ -50,7 +53,22 @@ export const theme = {
           padding: '0 2.5rem',
           borderBottom: '0.125rem solid',
           borderColor: 'bg-primary',
-        }
+        },
+      },
+      'float-from-left': {
+          '0%': { transform: 'translate(150%, 80%) rotate(0deg)', opacity: '0' },
+          '80%': { transform: 'translate(250%, 130%) rotate(100deg)', opacity: '0.2' },
+          '100%': { transform: 'translate(250%, 130%) rotate(100deg)', opacity: '1' }
+      },
+      'float-from-top': {
+        '0%': { transform: 'translate(200%, -150%) rotate(0deg)', opacity: '0' },
+        '80%': { transform: 'translate(225%, 65%) rotate(-100deg)', opacity: '0.2' },
+        '100%': { transform: 'translate(225%, 65%) rotate(-100deg)', opacity: '1'}
+      },
+      'float-from-right': {
+        '0%': { transform: 'translate(150%, 50%) rotate(0deg)', opacity: '0' },
+        '80%': { transform: 'translate(-300%, 160%) rotate(100deg)', opacity: '0.2' },
+        '100%': { transform: 'translate(-300%, 160%) rotate(100deg)', opacity: '1' }
       },
     }
   }

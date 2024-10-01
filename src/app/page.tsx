@@ -9,7 +9,11 @@ export default function Home() {
 
   return (
     <>
-      <h2 className='text-6xl tracking-widest'>Welcome.</h2>
+      <div className='w-full h-full relative flex justify-center items-center'>
+        <h2 className='text-4xl md:text-6xl tracking-widest'>
+          Welcome<span className='tracking-normal'>.</span>
+        </h2>
+      </div>
     </>
   );
 }

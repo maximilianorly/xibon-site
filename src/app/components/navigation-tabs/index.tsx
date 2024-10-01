@@ -27,7 +27,7 @@ export const routes: RoutesMap = new Map([
 
 const NavigationTabs: React.FC<{}> = () => {
   return (
-    <div className='relative z-10'>
+    <div>
       <NavigationTab route={routes.get('about')!} />
       <NavigationTab route={routes.get('work')!} />
       <NavigationTab route={routes.get('contact')!} />

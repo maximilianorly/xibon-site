@@ -7,7 +7,7 @@ const About: React.FC = () => {
 
   logPageVisit('About', referer);
 
-  return <>About. Coming soon.</>;
+  return <>I'm Max. The rest is coming soon.</>;
 };
 
 export default About;

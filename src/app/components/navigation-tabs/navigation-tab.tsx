@@ -24,11 +24,11 @@ const NavigationTab: React.FC<{ route: Route }> = ({ route }) => {
         >
           {isActive() && <div className='animate-activeTabSlide'></div>}
           <div
-            className={`flex flex-col justify-end ${
+            className={`flex flex-col justify-end text-md mb-[-0.25rem] ${
               isActive()
                 ? 'text-primary font-extrabold'
-                : 'text-gray-800 font-light'
-            } text-md mb-[-0.25rem]`}
+                : 'hover:tracking-widest'
+            }`}
           >
             {route.label.toLocaleLowerCase()}
           </div>

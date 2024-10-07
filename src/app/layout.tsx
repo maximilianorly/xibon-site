@@ -6,6 +6,8 @@ import Hero from './components/hero';
 import Logo from './components/logo';
 import Link from 'next/link';
 import { sans_font } from './fonts';
+import ThemeToggle from './components/theme-toggle';
+import SsrThemeManagerScript from './components/theme-toggle/ssr-theme-manager';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,8 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${sans_font.className} w-screen h-screen`}>
+      <head>
+        <SsrThemeManagerScript />
+      </head>
+      <body
+        className={`${sans_font.className} w-screen h-screen text-sys_dark dark:text-sys_light`}
+      >
         <Background>
+          <ThemeToggle />
           <div className='flex flex-col md:flex-row h-full justify-between p-7'>
             <div className='md:w-72 h-full flex flex-col'>
               <Link className='w-24 h-24' href={routes.get('home')!.path}>

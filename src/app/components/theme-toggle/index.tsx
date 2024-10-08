@@ -47,12 +47,11 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({}) => {
   return (
     <button
       onClick={toggleTheme}
-      className='w-24 h-24 absolute top-7 right-7 flex justify-center items-center rounded-full cursor-pointer
-      transition ease-in-out delay-150 hover:-translate-y-1 hover:text-sys_light hover:dark:text-sys_dark hover:scale-110 duration-200 hover:bg-primary'
+      className='w-full h-full flex justify-center items-center group'
     >
-      <div className='w-8 h-8'>
-        <OutlineSun className='hidden dark:block' />
-        <OutlineMoon className='dark:hidden' />
+      <div className='relative w-8 h-8'>
+        <OutlineSun className='absolute transition duration-200 ease-in-out opacity-0 dark:opacity-100' />
+        <OutlineMoon className='absolute transition duration-200 ease-in-out dark:opacity-0' />
       </div>
     </button>
   );

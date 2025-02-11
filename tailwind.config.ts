@@ -40,6 +40,7 @@ export const theme = {
     animation: {
       activeTabSlide: 'activeTabSlide 0.2s cubic-bezier(.08,.54,0,.85) forwards',
       'spin-medium': 'spin 0.5s linear 2',
+      'pulse-opacity': 'pulseOpacity 1.5s ease-in-out infinite',
     },
     keyframes: {
       activeTabSlide: {
@@ -52,6 +53,17 @@ export const theme = {
           borderColor: 'bg-primary',
         },
       },
+      pulseOpacity: {
+        '0%': {
+          opacity: '0.65',
+        },
+        '50%': {
+          opacity: '0.4',
+        },
+        '100%': {
+          opacity: '0.65',
+        },
+      }
     }
   }
 }

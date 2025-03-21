@@ -31,6 +31,6 @@ body {
     text-wrap: balance;
   }
   ::selection {
-    @apply bg-primary text-sys_light dark:text-sys_dark;
+    @apply bg-secondary bg-opacity-80 text-sys_light dark:text-sys_dark;
   }
 }

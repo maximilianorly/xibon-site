@@ -1,5 +1,10 @@
 import { headers } from 'next/headers';
 import { logPageVisit } from '../utils/logger';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Xibon - About'
+}
 
 const About: React.FC = () => {
   const headersList = headers();

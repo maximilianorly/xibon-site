@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   title: 'Xibon - Work'
 }
 
-const Work: React.FC = () => {
-  const headersList = headers();
+const Work: React.FC = async () => {
+  const headersList = await headers();
   const referer = headersList.get('referer');
 
   logPageVisit('Work', referer);

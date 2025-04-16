@@ -2,8 +2,8 @@ import { headers } from 'next/headers';
 import { logPageVisit } from './utils/logger';
 import InteractiveDots from './components/interactive-dots';
 
-export default function Home() {
-  const headersList = headers();
+export default async function Home() {
+  const headersList = await headers();
   const referer = headersList.get('referer');
 
   logPageVisit('Home', referer);

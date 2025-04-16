@@ -5,8 +5,8 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Xibon - Contact'
 }
-const Contact: React.FC = () => {
-  const headersList = headers();
+const Contact: React.FC = async () => {
+  const headersList = await headers();
   const referer = headersList.get('referer');
 
   logPageVisit('Contact', referer);

@@ -1,8 +1,13 @@
 import { headers } from 'next/headers';
 import { logPageVisit } from '../utils/logger';
+import { Metadata } from 'next';
 
-const About: React.FC = () => {
-  const headersList = headers();
+export const metadata: Metadata = {
+  title: 'Xibon - About'
+}
+
+const About: React.FC = async () => {
+  const headersList = await headers();
   const referer = headersList.get('referer');
 
   logPageVisit('About', referer);
